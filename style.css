@@ -1,0 +1,254 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: name;
+    src: url(font/Proxima\ Nova\ Font.otf);
+}
+
+body{
+    font-family: name;
+}
+
+
+main{
+    width: 100%;
+}
+
+.carousel-item{
+    width: 100%;
+    height: 97vh;
+}
+
+.carousel-caption{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h1{
+    font-size: 56px;
+    font-weight: 600;
+    margin-top: -380px;
+}
+
+h3{
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.carousel-caption button{
+    width: 200px;
+    margin-top: 50px;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 64px;
+}
+
+.carousel-caption a {
+    
+    text-decoration: none;
+}
+
+
+
+nav{
+    background-color: rgba(0, 0, 0, 0.42);
+    padding: 10px;
+    width: 100%;
+    top: 0;
+    z-index: 20;
+    max-width: 100%;
+}
+
+nav img{
+    height: 4vh;
+}
+
+.search{
+    border-radius: 2px;
+    width: 700px;
+    height: 32px;
+    padding: 3px;
+    background-color:#e3e6e7;
+}
+button{
+    border: none;
+    border-radius: 3px;
+}
+
+.search img{
+    height: 4vh;
+    width: 2vw;
+}
+
+.lighter-search{
+    display: none;
+}
+
+.search input{
+    width: 660px;
+    height: 20px;
+    border: none;
+    outline: none;
+    background-color: #e3e6e7;
+}
+
+.search input:active{
+    background-color: white;
+}
+
+.search:active{
+    background-color: white;
+}
+
+.login {
+    width: 100px;
+    background-color: transparent;
+    color: white;
+}
+
+.signup {
+    width: 100px;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 600;
+}
+
+.signup:hover {
+    color: rgb(133, 133, 133);
+}
+
+.carousel-caption button:hover{
+    color: rgb(133, 133, 133);
+}
+
+section{
+    padding: 10px;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 35px
+}
+
+hr{
+    display: none;
+}
+
+section div a{
+    text-decoration: none;
+    color: gray;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+section span a{
+    text-decoration: none;
+    color: gray;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+select{
+    background-color: transparent;
+    border: none;
+    color: gray;
+    font-size: 13px;
+    font-weight: bold;
+    width: 75px;
+    cursor: pointer;
+}
+
+select option{
+    color: black;
+}
+
+
+.connecting{
+    display: none;
+}
+
+.span, .span-img{
+    display: flex;
+    justify-content: center;
+    gap: 35px
+}
+
+
+@media screen and (max-width: 475px) {
+    nav{
+        padding: 10px;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .signup{
+        display: none;
+    }
+
+    .lighter-search{
+        display: block;
+        height: 3.5vh;
+        margin-left: 160px;
+    }
+
+    nav .logo{
+        height: 2.5vh;
+    }
+
+    .login {
+        border: 2px solid white;
+        border-radius: 0px;
+        width: 80px;
+    }
+
+    section{
+        height: 110vh;
+        display: flex;
+        gap: 0px;
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    select option{
+        width: 100px;
+    }
+
+    
+    .connecting{
+        display: block;
+        padding: 0 0 0 40px;
+    }
+
+    .smug{
+        padding: 0 120px;
+    }
+
+    hr{
+        display: block
+    }
+
+    .span{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .span-img{
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+    }
+
+}
