@@ -129,6 +129,19 @@ button{
     color: rgb(133, 133, 133);
 }
 
+.author{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.author a{
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
 section{
     padding: 10px;
     background-color: black;
@@ -210,6 +223,22 @@ select option{
         border: 2px solid white;
         border-radius: 0px;
         width: 80px;
+    }
+
+    h1{
+        font-size: 36px;
+    }
+
+    .carousel-caption button{
+        width: 120px;
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 47px;
+    }
+
+    .author{
+        padding-top: 100px;
     }
 
     section{
